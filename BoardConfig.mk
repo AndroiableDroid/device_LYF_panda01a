@@ -103,13 +103,13 @@ BOARD_USES_QCNE := true
 TARGET_LDPRELOAD := libNimsWrap.so
 
 # Dex pre-opt to speed up initial boot
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
+#ifeq ($(HOST_OS),linux)
+#  ifneq ($(TARGET_BUILD_VARIANT),eng)
+#    ifeq ($(WITH_DEXPREOPT),)
+#      WITH_DEXPREOPT := true
+#    endif
+#  endif
+#endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
 # Display
