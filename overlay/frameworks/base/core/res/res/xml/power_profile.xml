@@ -20,8 +20,8 @@
 <device name="Android">
     <!-- All values are in mAh except as noted -->
     <item name="none">0</item>
-    <item name="screen.on">50</item>
-    <item name="screen.full">240</item>
+    <item name="screen.on">63</item>
+    <item name="screen.full">261</item>
     <item name="bluetooth.active">21</item>
     <item name="bluetooth.on">0.6</item>
     <item name="wifi.on">1</item>
@@ -69,8 +69,8 @@
         <value>1804800</value> <!-- 1804.8 MHz CPU speed -->
     </array>
     <!-- Power consumption when CPU is idle -->
-    <item name="cpu.idle">8</item>
-    <item name="cpu.awake">25</item>
+    <item name="cpu.awake">1.6</item>
+    <item name="cpu.idle">1.6</item>
     <!-- Power consumption at different speeds -->
     <array name="cpu.active.cluster0">
         <value>39</value> <!-- 400 MHz CPU speed -->
@@ -103,7 +103,7 @@
     </array>
 
     <!-- This is the battery capacity in mAh -->
-    <item name="battery.capacity">4000</item>
+    <item name="battery.capacity">3000</item>
 
     <array name="wifi.batchedscan"> <!-- mA.  Current figures based on .0801 s/c and 75.48mA while scanning -->
         <value>.0002</value> <!-- 1-8/hr -->
