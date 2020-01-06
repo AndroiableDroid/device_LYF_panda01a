@@ -28,7 +28,7 @@ $(call inherit-product, device/LYF/panda01a/device.mk)
 BOARD_VENDOR := LYF
 PRODUCT_BRAND := LYF
 PRODUCT_DEVICE := panda01a
-PRODUCT_NAME := cm_panda01a
+PRODUCT_NAME := lineage_panda01a
 PRODUCT_MANUFACTURER := LYF
 PRODUCT_MODEL := Water F1s
 TARGET_VENDOR := LYF
