@@ -534,6 +534,7 @@ etc/firmware/cpp_firmware_v1_10_0.fw
 # Camera sensors, eeprom & etc
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_chromaflash_lib.so
+vendor/lib/libchromaflash.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dw9761b_eeprom.so
@@ -585,10 +586,12 @@ vendor/lib/libmmcamera_isp_wb40.so
 vendor/lib/libmmcamera_le2464c_eeprom.so
 vendor/lib/libmmcamera_le2464c_master_eeprom.so
 vendor/lib/libmmcamera_llvd.so
+vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera_mt9m114.so
 vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
 vendor/lib/libmmcamera_optizoom_lib.so
+vendor/lib/liboptizoom.so
 vendor/lib/libmmcamera_ov13850_polaris.so
 vendor/lib/libmmcamera_ov13850_q13v06k.so
 vendor/lib/libmmcamera_ov13850.so
@@ -613,11 +616,13 @@ vendor/lib/libmmcamera_s5k5e2.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
+vendor/lib/libseemore.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_p5s13b_eeprom.so
 vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
 vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 vendor/lib/libmmcamera_sw_tnr.so
+vendor/lib/libllvd_sw_tnr.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
@@ -625,6 +630,8 @@ vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
+vendor/lib/libubifocus.so
+vendor/lib/libtrueportrait.so
 vendor/lib/libmmcamera_vpu_module.so
 
 # Charger
@@ -1010,6 +1017,13 @@ bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib64/libTimeService.so
 vendor/lib/libTimeService.so
+
+# Widewine
+vendor/lib/libWVStreamControlAPI_L3.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libwvm.so
+vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
 lib64/libwcnss_qmi.so
