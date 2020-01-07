@@ -35,6 +35,12 @@ voice.voip.conc.disabled=true
 bluetooth.hfp.client=1
 
 # Camera
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk
+persist.camera.stats.test=5
+camera.display.umax=1920x1080
+camera.display.lmax=1280x720
+media.camera.ts.monotonic=1
+camera.lowpower.record.enable=1
 persist.camera.HAL3.enabled=1
 
 # CNE/DPM
