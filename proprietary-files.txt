@@ -917,6 +917,7 @@ bin/radish
 bin/rmt_storage
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
+etc/permissions/qti_permissions.xml
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
