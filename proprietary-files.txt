@@ -872,6 +872,7 @@ bin/irsc_util
 etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/data/qmi_config.xml
+etc/permissions/qti_permissions.xml
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -908,16 +909,25 @@ vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
 # Radio
+-app/embms/embms.apk
+-app/fastdormancy/fastdormancy.apk
 -app/shutdownlistener/shutdownlistener.apk
+-framework/embmslibrary.jar
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
+framework/qti-telephony-common.jar
+framework/QtiTelephonyServicelibrary.jar
 bin/netmgrd
 bin/qmuxd
 bin/radish
 bin/rmt_storage
+bin/tftp_server
+etc/permissions/embms.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
+etc/permissions/telephonyservice.xml
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/bin/qti
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
@@ -1026,4 +1036,4 @@ vendor/lib/libwvm.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
-lib64/libwcnss_qmi.so
+lib64/libwcnss_qmi.so|ccd637f6ceca28829ae650b831c59f720a43da52
