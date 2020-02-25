@@ -39,5 +39,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-ckt
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=LYF/LS-5201/panda01a_msm8952_64:6.0.1/MMB29M/195:user/release-keys \
-    PRIVATE_BUILD_DESC="panda01a_msm8952_64-user 6.0.1 MMB29M 702 release-keys"
+    PRIVATE_BUILD_DESC="panda01a_msm8952_64-user 6.0.1 MMB29M 496 release-keys"
 endif
