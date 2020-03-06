@@ -139,11 +139,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# Kernel HAX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel/Image.gz:kernel \
-    $(LOCAL_PATH)/kernel/dt.img:dt.img
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
@@ -170,10 +165,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
-
-# module
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modules/pronto_wlan.ko:system/lib/modules/wlan.ko
 
 # OMX
 PRODUCT_PACKAGES += \
