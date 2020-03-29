@@ -941,6 +941,7 @@ vendor/lib/libsmemlog.so
 -framework/qcrilhook.jar
 framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
+bin/ATFWD-daemon
 bin/netmgrd
 bin/qmuxd
 bin/radish
