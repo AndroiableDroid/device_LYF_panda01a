@@ -83,6 +83,10 @@ persist.dbg.vt_avail_ovr=1
 persist.radio.videopause.mode=1
 persist.data.iwlan.enable=true
 persist.dbg.wfc_avail_ovr=1
+persist.ims.disableQXDMLogs=0
+persist.ims.disableADBLogs=0
+persist.ims.disableDebugLogs=0
+persist.ims.disableIMSLogs=0
 
 # Media
 media.msm8956hw=1
