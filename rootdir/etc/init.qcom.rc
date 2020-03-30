@@ -569,6 +569,7 @@ service perfd /system/vendor/bin/perfd
    class main
    user root
    disabled
+   socket perfd seqpacket 0666 root system
    writepid /dev/cpuset/system-background/tasks
 
 service thermal-engine /system/vendor/bin/thermal-engine
@@ -590,7 +591,7 @@ service audiod /system/bin/audiod
    group system
 
 service wcnss-service /system/bin/wcnss_service
-    class late_start
+    class main
     user system
     group system wifi radio
     oneshot
@@ -600,26 +601,15 @@ service adsprpcd /system/bin/adsprpcd
     user media
     group media
 
-service ppd /system/vendor/bin/mm-pp-daemon
-    class late_start
-    disabled
-    user system
-    socket pps stream 0660 system system
-    group system graphics
-
-on property:init.svc.surfaceflinger=stopped
-    stop ppd
-
-on property:init.svc.surfaceflinger=running
-    start ppd
-
 on charger
     start hvdcp_opti
 
-service per_mgr /system/bin/pm-service
+service msm_irqbalance /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
     class core
-    user system
-    group system net_raw
+    user root
+    group root
+    disabled
+    writepid /dev/cpuset/system-background/tasks
 
 service msm_irqbal_lb /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
     class core
