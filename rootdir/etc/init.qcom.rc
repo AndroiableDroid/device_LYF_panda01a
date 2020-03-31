@@ -147,6 +147,10 @@ on boot
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
 
+    copy /system/vendor/qcril.db /data/misc/radio/qcril.db
+    chown radio radio /data/misc/radio/qcril.db
+    write /data/misc/radio/db_check_done 1
+
     # Mark the copy complete flag to not completed
     write /data/misc/radio/copy_complete 0
     chown radio radio /data/misc/radio/copy_complete
@@ -346,6 +350,8 @@ on property:sys.boot_completed=1
 service cnd /system/bin/cnd
     class late_start
     socket cnd stream 660 root inet
+    group root wakelock
+    writepid /dev/cpuset/system-background/tasks
 
 service dpmd /system/bin/dpmd
     class main
@@ -404,11 +410,14 @@ on property:hw.fm.init=1
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/bin/qmuxd
     class main
-    user root
-    group radio audio bluetooth gps qcom_diag
+    user radio
+    group radio audio bluetooth gps nfc qcom_diag wakelock
+    writepid /dev/cpuset/system-background/tasks
 
 service netmgrd /system/bin/netmgrd
     class main
+    group radio system wakelock
+    writepid /dev/cpuset/system-background/tasks
 
 service ipacm-diag /system/bin/ipacm-diag
     class main
