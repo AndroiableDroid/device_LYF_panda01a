@@ -1,0 +1,18 @@
+Copyright 2016 - The CyanogenMod Project.
+
+Device Tree for LYF Water F1s (panda01a)
+===========================================
+
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Quad-core 1.4 GHz Cortex-A53 & Dual-core 1.8 GHz Cortex-A72
+Chipset | Qualcomm MSM8956 Snapdragon 650
+GPU     | Adreno 510
+Memory  | 3GB DDR3 Dual-channel
+Storage | 32GB
+Battery | Non-removable Li-Po 3000mAh battery
+Display | 1920x1080 pixels, 5.5 inches (~401 ppi pixel density)
+Camera  | Primary: 16 MP, f/2.0, phase detection autofocus, dual-LED (dual tone) flash
+	| Secondary: 5 MP, f/2.0, 1080p, LED Flash
+
+![LYF Water F1s](https://www.mylyf.com/water-f-one-s-mobile-master-head-banner-img/f-one-s-masthead-mob.png "LYF Water F1s")
